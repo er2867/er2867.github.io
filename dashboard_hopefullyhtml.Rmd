@@ -27,7 +27,7 @@ rest_inspection =
 
 ```
 
-Column {data-width=550}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Scatterplot
@@ -41,7 +41,7 @@ rest_inspection %>%
           text = ~text_label)
 ```
 
-Column {data-width=50}
+Column {data-width=300}
 -----------------------------------------------------------------------
 
 ### Boxplot

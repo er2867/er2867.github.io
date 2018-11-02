@@ -2,5 +2,18 @@
 title: "About"
 ---
 
+### Homework 4 
+
+Elliot Rozen
+---
+
+[Homework4 Problem 2 Dashboard](er2867.github.io/dashboard_hopefullyhtml.html)
+
+---
+
 ### About this site
 
+Homework 4 website!
+  
+##CV##
+  <img src = "images/ElliotRozenResume.jpg" style = "width:100%">
