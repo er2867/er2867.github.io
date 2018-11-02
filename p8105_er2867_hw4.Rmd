@@ -7,7 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-install.packages("flexdashboard")
+install.packages("flexdashboard", repos = "https://cran.r-project.org/web/packages/flexdashboard/index.html")
+
+
 library(tidyverse)
 library(p8105.datasets)
 library(viridis)
