@@ -1,0 +1,42 @@
+---
+title: "p8105_hw4_er2867"
+author: "Elliot"
+date: "November 2, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("flexdashboard")
+library(tidyverse)
+library(p8105.datasets)
+library(viridis)
+library(plotly)
+```
+
+```{r}
+data("rest_inspec")
+
+set.seed(111)
+rest_inspection = 
+  rest_inspec %>% 
+  select(boro, inspection_type, score, violation_code, zipcode, grade, inspection_date, violation_description) %>% 
+  filter(!is.na(score)) %>% 
+  sample_n(2000)
+
+rest_inspection %>%
+  mutate(text_label = str_c("Grade", grade, "Violation", violation_description)) %>% 
+  plot_ly(x = ~inspection_date, y = ~score, type = "scatter", mode = "markers",
+          alpha = 0.5, 
+          color = ~boro,
+          text = ~text_label)
+
+rest_inspection %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box",
+          colors = "Set3")
+
+
+rest_inspection %>% 
+  plot_ly(x = ~boro, y = ~score, color = ~grade, type = "bar")
+
+```
