@@ -1,0 +1,32 @@
+---
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<elliotrozen@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/<er2867>/
+output: html_document
+ 
+---
+title: "Holy cow!"
+---
+
+### I have a webpage!
+
+And I can put all kinds of stuff on it!
+
+title: "About"
+---
+
+### About this site
+
+Homework 4 website!
+```{r}
+img src="images/Elliot_Rozen_Resume.pdf" style="width:75%"
+```
+
